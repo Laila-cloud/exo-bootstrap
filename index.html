@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <title>TP Bootstrap</title>
+
+    <style>
+      .main-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .header {
+        background-color: rgb(2, 1, 61);
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">TP Bootstrap</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Accueil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Test</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link disabled">Inactif</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Se connecter</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="btn btn-success">S'inscrire</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="header text-center p-5">
+      <div class="container">
+        <span
+          >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure magni
+          laudantium nesciunt adipisci unde impedit!</span
+        >
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Souscrire
+        </button>
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog text-dark">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Fermer le popop"
+                ></button>
+              </div>
+              <div class="modal-body">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
+                odit molestias sunt at nemo numquam ad, obcaecati ratione
+                dolorum reiciendis aspernatur laboriosam facilis temporibus quae
+                iste voluptatum expedita? Officiis, ut?
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main-page py-5">
+      <div class="container">
+        <div class="row h-100 justify-content-center align-items-center">
+          <div class="col-lg-6">
+            <img
+              src="assets/img/sky-2799118_640.jpg"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="p-5">Lorem ipsum dolor</h1>
+            <p class="p-5">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
+              obcaecati placeat qui, earum quo, laborum iste saepe dolor quas
+              fuga porro. Itaque amet neque deserunt repellendus fugit incidunt.
+            </p>
+            <form class="p-5">
+              <div class="input-group mb-3">
+                <input
+                  type="mail"
+                  class="form-control"
+                  placeholder="Addresse mail"
+                  aria-label="Recipient's username"
+                  aria-describedby="basic-addon2"
+                />
+                <button class="input-group-text btn btn-primary">
+                  S'inscrire
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+  </body>
+</html>
